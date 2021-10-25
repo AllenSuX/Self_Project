@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+div.content{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 185px;
+    
+}
+div.img{
+ width: 627px;
+ height: 417px;   
+ display: inline-block;
+ margin-top: 52px;
+}
+div.img > img{
+    width: 100%;
+    height: 100%;
+} 
+div.explist{
+    width: 500px;
+    height: 572px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 40px;
+    font-size: 0px;
+}
+div.d1{
+    width: 80px;
+    height: 50px;
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top:10px;
+    vertical-align: top;
+    margin-left: 40px;
+    background-color: rgb(196, 196, 196,0.2);
+}
+div.d2{
+    width: 80px;
+    height: 50px;
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top:10px;
+    background-color: rgb(196,196,196,0.5);
+}
+div.list{
+    width: 100%;
+    height: 532px;
+    font-size: 16px;
+    position: relative;
+    background-color: rgb(196,196,196,0.2);
+    border-radius: 50px;
+}
+div.list > div.left> p{
+    width: 320px;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+div.list > div.left> p:nth-child(1){
+    margin-top: 5px;
+}
+div.list>div.left{
+    width: 283px;
+    height: 483px;
+    margin-left: 30px;
+}
+p.p4{
+    width: 70px;
+}
+label.l1{
+    margin-right: 200px;
+}
+label.l2{
+    margin-right: 200px;
+}
+label.l3{
+    margin-right: 100px;
+}
+label.l4{
+    margin-right: 150px;
+}
+label.l5{
+    margin-right: 100px;
+}
+label.l6{
+    margin-right: 100px;
+}
+label.l7{
+    margin-right: 100px;
+}
+label.l8{
+    margin-right: 150px;
+}
+label.l9{
+    margin-right: 200px;
+}
+div.right{
+    width: 200px;
+    height: 230px;
+    margin-top: 0;
+    display: inline-block;
+    position: absolute;
+    right:0px;
+    top:5px;
+}
+div.right>p{
+    margin-top:0px ;
+    margin-bottom: 10px;
+}
+label.l10{
+    margin-right: 60px;
+}
+label.l11{
+    margin-right: 60px;
+}
+label.l12{
+    margin-right: 60px;
+}
+label.l13{
+    margin-right: 60px;
+}
+label.l15{
+    margin-right: 110px;
+}

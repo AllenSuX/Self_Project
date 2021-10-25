@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+div.top_header{
+  margin: 0 auto;
+  width:1440px;
+  height:628px;
+  font-size: 0px;
+  position: relative;
+}
+div.top_color{
+  background-color:rgb(38,30,71);
+  width:398px;
+  height:100%;
+  margin: 0;
+  display: inline-block;
+}
+div.top_image{
+  display: inline-block;
+  width:1039px;
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  vertical-align: top;
+}
+div.top_image>img{
+width: 1039px;
+height: 100%;
+}
+div.logo{
+  position: absolute;
+  top:49px;
+  left:137px;
+  width: 139px;
+  height: 160px;
+  font-size: 16px;
+}
+/* ====================Body content========================================== */
