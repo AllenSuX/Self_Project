@@ -8,6 +8,7 @@
     height: 160px;
     margin-top: 37px;
     position: relative;
+    display: inline-block;
   }
   div.logo > img{
     width: 100%;
@@ -28,17 +29,19 @@
   }
   ul.topnav{
     font-size: 0px;
-    margin-left:50%;
+    margin-top:40px;
+    margin-left: 450px;
     padding: 0px;
     position: relative;
-    bottom:155px;
+    display: inline-block;
+    vertical-align: top;
   }
   ul.topnav > li{
     display: inline-block;
     font-size: 16px;
     list-style: none;
-    margin-left:10px;
-    margin-right:50px;
+    margin-left:22px;
+    margin-right:54px;
   }
   ul.topnav > li >a{
     display: inline-block;
@@ -50,18 +53,21 @@
     padding-bottom:10px;
     color:black;
   }
+  div.logo2{
+    width: 139px;
+    height: 160px;
+    font-size: 16px;
+    position: absolute;
+    top:45px;
+    right: 0px;
+  }
   ul.topnav2{
     font-size: 0px;
     padding: 0;
   }
   ul.topnav2 > li{
     font-size: 16px;
-    display: inline-block;
     list-style: none;
-    padding-top:16px;
-    padding-left:22px;
-    padding-right:54px;
-    padding-bottom:10px;
   }
   ul.topnav2 > li > a{
     display: inline-block;
@@ -69,58 +75,32 @@
     font-size: 14px;
     line-height: 16px;
     color:black;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-right:18px;
+    padding-top:18px;
+    padding-left:20px;
+    padding-bottom:15px;
   }
-  ul.topnav2_1{
-    font-size: 0px;
-    padding: 0;
   
-  }
-  ul.topnav2_1 > li{
-    font-size: 16px;
-    display: inline-block;
-    list-style: none;
-    padding-top:10px;
-    padding-left:22px;
-    padding-right:54px;
-    padding-bottom:23px;
-  
-  }
-  ul.topnav2_1 > li > a{
-    display: inline-block;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 16px;
-    color:black;
-  }
   div.topnav2{
-    width: 547px;
-    height: 104px;
+    width: 110px;
+    height: 100px;
     background-color: rgb(196,196,196,24%);
     position: absolute;
-    left:25px;
+    left:20px;
     top: 100%;
-  
     display: none;
   }
   
-  ul.topnav2_1 > li:nth-child(4){
-    padding-right: 29px;
-  }
-  ul.topnav2 > li:nth-child(4){
-    padding-right: 29px;
-  }
   ul.topnav3{
     font-size: 0px;
     padding: 0;
   }
   ul.topnav3 > li{
     font-size: 16px;
-    display: inline-block;
     list-style: none;
-    padding-top:16px;
-    padding-left:22px;
-    padding-right:54px;
-    padding-bottom:10px;
   }
   ul.topnav3 > li > a{
     display: inline-block;
@@ -128,58 +108,31 @@
     font-size: 14px;
     line-height: 16px;
     color:black;
-  }
-  ul.topnav3_1{
-    font-size: 0px;
-    padding: 0;
-  
-  }
-  ul.topnav3_1 > li{
-    font-size: 16px;
-    display: inline-block;
-    list-style: none;
-    padding-top:10px;
-    padding-left:22px;
-    padding-right:54px;
-    padding-bottom:23px;
-  
-  }
-  ul.topnav3_1 > li > a{
-    display: inline-block;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 16px;
-    color:black;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-right:18px;
+    padding-top:18px;
+    padding-left:20px;
+    padding-bottom:15px;
   }
   div.topnav3{
-    width: 547px;
-    height: 104px;
+    width: 110px;
+    height: 130px;
     background-color: rgb(196,196,196,24%);
     position: absolute;
-    left:25px;
+    left:160px;
     top: 100%;
-  
     display: none;
   }
   
-  ul.topnav3_1 > li:nth-child(4){
-    padding-right: 29px;
-  }
-  ul.topnav3 > li:nth-child(4){
-    padding-right: 29px;
-  }
   ul.topnav4{
     font-size: 0px;
     padding: 0;
   }
   ul.topnav4 > li{
     font-size: 16px;
-    display: inline-block;
     list-style: none;
-    padding-top:16px;
-    padding-left:22px;
-    padding-right:54px;
-    padding-bottom:10px;
   }
   ul.topnav4 > li > a{
     display: inline-block;
@@ -187,45 +140,22 @@
     font-size: 14px;
     line-height: 16px;
     color:black;
-  }
-  ul.topnav4_1{
-    font-size: 0px;
-    padding: 0;
-  
-  }
-  ul.topnav4_1 > li{
-    font-size: 16px;
-    display: inline-block;
-    list-style: none;
-    padding-top:10px;
-    padding-left:22px;
-    padding-right:54px;
-    padding-bottom:23px;
-  
-  }
-  ul.topnav4_1 > li > a{
-    display: inline-block;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 16px;
-    color:black;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-right:18px;
+    padding-top:18px;
+    padding-left:20px;
+    padding-bottom:15px;
   }
   div.topnav4{
-    width: 547px;
-    height: 104px;
+    width: 110px;
+    height: 100px;
     background-color: rgb(196,196,196,24%);
     position: absolute;
-    left:25px;
+    left:300px;
     top: 100%;
-  
     display: none;
-  }
-  
-  ul.topnav4_1 > li:nth-child(4){
-    padding-right: 29px;
-  }
-  ul.topnav4 > li:nth-child(4){
-    padding-right: 29px;
   }
   ul.topnav5{
     font-size: 0px;
@@ -233,12 +163,7 @@
   }
   ul.topnav5 > li{
     font-size: 16px;
-    display: inline-block;
     list-style: none;
-    padding-top:16px;
-    padding-left:22px;
-    padding-right:54px;
-    padding-bottom:10px;
   }
   ul.topnav5 > li > a{
     display: inline-block;
@@ -246,47 +171,23 @@
     font-size: 14px;
     line-height: 16px;
     color:black;
-  }
-  ul.topnav5_1{
-    font-size: 0px;
-    padding: 0;
-  
-  }
-  ul.topnav5_1 > li{
-    font-size: 16px;
-    display: inline-block;
-    list-style: none;
-    padding-top:10px;
-    padding-left:22px;
-    padding-right:54px;
-    padding-bottom:23px;
-  
-  }
-  ul.topnav5_1 > li > a{
-    display: inline-block;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 16px;
-    color:black;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-right:18px;
+    padding-top:18px;
+    padding-left:20px;
+    padding-bottom:15px;
   }
   div.topnav5{
-    width: 547px;
-    height: 104px;
+    width: 130px;
+    height: 100px;
     background-color: rgb(196,196,196,24%);
     position: absolute;
-    left:25px;
+    left:450px;
     top: 100%;
-  
     display: none;
   }
-  
-  ul.topnav5_1 > li:nth-child(4){
-    padding-right: 29px;
-  }
-  ul.topnav5 > li:nth-child(4){
-    padding-right: 29px;
-  }
-  
   ul.topnav > li:hover div.topnav2{
     display: block;
   }
@@ -299,13 +200,96 @@
   ul.topnav > li:hover > div.topnav5{
     display: block;
   }
-  div.top1{
+  
+  ul.topnav2 > li:nth-child(1):hover::after {
+    content: "";
+    position: absolute;
+    width:40%;
+    height: 4px;
+    top:40px;
+    left: 31%;
+    background-color: rgb(196,196,196,70%);
+    border-radius: 50px;
+  }
+  ul.topnav2 > li:nth-child(2):hover::after {
+    content: "";
+    position: absolute;
+    width:40%;
+    height: 4px;
+    bottom:10px;
+    left: 31%;
+    background-color: rgb(196,196,196,70%);
+    border-radius: 50px;
+  }
+  ul.topnav3 > li:nth-child(1):hover::after {
+    content: "";
+    position: absolute;
+    width:40%;
+    height: 4px;
+    top:50px;
+    left: 31%;
+    background-color: rgb(196,196,196,70%);
+    border-radius: 50px;
+  }
+  ul.topnav3 > li:nth-child(2):hover::after {
+    content: "";
+    position: absolute;
+    width:40%;
+    height: 4px;
+    bottom:10px;
+    left: 31%;
+    background-color: rgb(196,196,196,70%);
+    border-radius: 50px;
+  }
+  ul.topnav4 > li:nth-child(1):hover::after {
+    content: "";
+    position: absolute;
+    width:40%;
+    height: 4px;
+    top:40px;
+    left: 31%;
+    background-color: rgb(196,196,196,70%);
+    border-radius: 50px;
+  }
+  ul.topnav4 > li:nth-child(2):hover::after {
+    content: "";
+    position: absolute;
+    width:40%;
+    height: 4px;
+    bottom:10px;
+    left: 31%;
+    background-color: rgb(196,196,196,70%);
+    border-radius: 50px;
+  }
+  ul.topnav5 > li:nth-child(1):hover::after {
+    content: "";
+    position: absolute;
+    width:40%;
+    height: 4px;
+    top:40px;
+    left: 31%;
+    background-color: rgb(196,196,196,70%);
+    border-radius: 50px;
+  }
+  ul.topnav5 > li:nth-child(2):hover::after {
+    content: "";
+    position: absolute;
+    width:40%;
+    height: 4px;
+    bottom:10px;
+    left: 31%;
+    background-color: rgb(196,196,196,70%);
+    border-radius: 50px;
+  }
+div.top1{
     display:inline-block;
     width:505px;
     height: 150px;
     margin-left: 58%;
+    margin-top: 30px;
+    margin-bottom:200px;
     background-color:rgb(196,196,196,1);
-  }
+}
   h1{
     margin: 0;
     text-align: right;
