@@ -12,7 +12,7 @@ div.timeline{
   height: 1550px;
   margin: 0 auto;
 }
-ul{
+div.timeline > ul{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -21,7 +21,7 @@ ul{
   width: 100%;
   position: relative;
 }
-ul::after{
+div.timeline > ul::after{
   content: "";
   border-right: 8px dashed rgb(196,196,196,100%);
   width: 710px;
@@ -31,14 +31,14 @@ ul::after{
   z-index: -1;
   
 }
-ul > li{
+div.timeline > ul > li{
   margin-top:100px;
 }
-ul> li > p{
+div.timeline > ul> li > p{
   font-size:14px;
   line-height: 20px;
 }
-ul> li > p:first-child{
+div.timeline > ul> li > p:first-child{
   width: 320px;
   height: 100px;
   padding-top: 20px;
@@ -51,21 +51,21 @@ ul> li > p:first-child{
   line-height: 25px;
    
 }
-ul> li > p:nth-child(2){
+div.timeline > ul> li > p:nth-child(2){
   width: 481px;
   height: 306px;
   border-radius: 23px;
   overflow: hidden;
 }
-ul>li:nth-child(even){
+div.timeline > ul>li:nth-child(even){
   float: right; 
   transform: translate(-30%,100%);
 }
-ul>li:nth-child(1){
+div.timeline > ul>li:nth-child(1){
   float: left;
   transform: translateX(25%);
 }
-ul>li:nth-child(3){
+div.timeline > ul>li:nth-child(3){
   transform: translate(30%,100%);
   float: left;
 }
@@ -73,7 +73,7 @@ img{
   width: 100%;
   height: 100%;
 }
-ul>li:nth-child(1)::before{
+div.timeline > ul>li:nth-child(1)::before{
   content: "2009年草創";
   font-size: 20px;
   position: absolute;
@@ -81,7 +81,7 @@ ul>li:nth-child(1)::before{
   top:-40px;
   font-weight: bold;
 }
-ul>li:nth-child(3)::before{
+div.timeline > ul>li:nth-child(3)::before{
   content: "2018年 評選為台北三大 live house 之一";
   font-size:20px;
   position: absolute;
@@ -89,7 +89,7 @@ ul>li:nth-child(3)::before{
   top:-50px;
   font-weight: bold;
 }
-ul>li:nth-child(2)::before{
+div.timeline > ul>li:nth-child(2)::before{
   content: "2013年 擴大場地";
   font-size: 20px;
   position: absolute;
@@ -97,7 +97,7 @@ ul>li:nth-child(2)::before{
   top:-40px;
   font-weight: bold;
 }
-ul>li:nth-child(1)::after{
+div.timeline > ul>li:nth-child(1)::after{
   content: "";
   border-radius: 50%;
   width: 40px;
@@ -107,7 +107,7 @@ ul>li:nth-child(1)::after{
   right:-137px;
   top:-35px;
 }
-ul>li:nth-child(3)::after{
+div.timeline > ul>li:nth-child(3)::after{
   content: "";
   border-radius: 50%;
   width: 40px;
@@ -117,7 +117,7 @@ ul>li:nth-child(3)::after{
   right:-113px;
   top:-45px;
 }
-ul>li:nth-child(2)::after{
+div.timeline > ul>li:nth-child(2)::after{
   content: "";
   border-radius: 50%;
   width: 40px;
