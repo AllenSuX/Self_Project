@@ -52,6 +52,14 @@ intro1.addEventListener("click",function(){
 var to_top = document.getElementsByClassName("arrow_img")[0];
     to_top.addEventListener("click",function(){
     $("html, body").animate({scrollTop: 0}, 800);
+
+    var mobileHover = function () {
+        $('*').on('touchstart', function () {
+            $(this).trigger('hover');
+        }).on('touchend', function () {
+            $(this).trigger('hover');
+        });
+    };
 });
 
   
