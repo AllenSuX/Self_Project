@@ -380,7 +380,7 @@ ul.topnav5 > li:nth-child(2):hover::after {
     height: 40px;
     display: inline-block;
     position: absolute;
-    right: 0px;
+    right: 20px;
     top: 8px;
   }
   div.dhumburger > label >span::before{
@@ -501,7 +501,7 @@ ul.topnav5 > li:nth-child(2):hover::after {
     display:block;
   }
   header{
-    width:720px;
+    width:100;
     max-width: 100%;
     height: auto;
   }
@@ -648,7 +648,7 @@ ul.topnav5 > li:nth-child(2):hover::after {
     right:auto;
     top:auto;
     left:0px;
-    width: 100% !important;
+    width: 90% !important;
     font-weight: bold;
   }
   div.timeline > ul>li:nth-child(3)::before{
@@ -659,7 +659,7 @@ ul.topnav5 > li:nth-child(2):hover::after {
     top:auto;
     left:0px;
     font-weight: bold;
-   width: 100%;
+   width: 90%;
     top: -60px !important;
   }
   div.timeline > ul>li:nth-child(2)::before{
@@ -1044,19 +1044,22 @@ ul.topnav5 > li:nth-child(2):hover::after {
       right:auto;
       top:auto;
       left:0px;
-      width: 100% !important;
       font-weight: bold;
+      padding: 0px 20px;
+      padding-right: 0px;
     }
     div.timeline > ul>li:nth-child(3)::before{
       content: "2018年 評選為台北三大 live house 之一";
       font-size:20px;
       position: absolute;
-      right:auto;
+      right:auto!important;
       top:auto;
       left:0px;
       font-weight: bold;
-     width: 100%;
       top: -60px !important;
+      padding: 0px 20px;
+      padding-right:0px;
+      height: auto !important;
     }
     div.timeline > ul>li:nth-child(2)::before{
       content: "2013年 擴大場地";
@@ -1064,8 +1067,9 @@ ul.topnav5 > li:nth-child(2):hover::after {
       position: absolute;
       right:auto;
       top:auto;
-      left:0px;
+      left:0px!important;
       font-weight: bold;
+      padding: 0px 20px;
      
     }
     div.timeline > ul>li:nth-child(1)::after{
