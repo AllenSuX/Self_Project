@@ -11,38 +11,56 @@ header{
   background-color: black;
   position: relative;
 }
-header>p{
+header>div.toph>p{
   color: white;
   font-size:24px;
   font-weight: bold;
   width: 25px;
-  height: 400px;
+  /* height: 400px; */
   display: inline-block;
   vertical-align: top;
-  margin-left:56px;
-  margin-top:80px;
+  /* margin-left:56px;
+  margin-top:80px; */
+} 
+div.toph{
+  margin: 0 auto;
+  /* position: relative; */
 }
 p.p1{
-  margin-left:320px;
+  margin-left:280px;
+  margin-top: 50px;
 }
 p.p2{
   margin-top:175px;
-  position:relative;
+  margin-left:80px;
+  position: relative;
 }
 p.p2::after{
   content: "?";
   position: absolute;
   left:5px;
+  bottom: -30px;
+}
+p.p3{
+  margin-left: 80px;
+  margin-top: 50px;
 }
 p.p4{
   margin-top:175px;
+  margin-left:80px;
+}
+p.p5{
+  margin-top: 50px;
+  margin-left:80px;
 }
 p.p6{
   margin-top:180px;
+  margin-left:80px;
 }
 p.p7{
   height:100px;
   margin-top: 330px;
+  margin-left:80px;
 }
 div.logo{
   width: 140px;
@@ -63,6 +81,7 @@ div.trago{
   border-color: black transparent transparent transparent;
   margin: 0 auto;
   position: relative;
+  transform: translateY(130px);
 }
 div.arrowdown{
   display: inline-block;
@@ -344,3 +363,790 @@ ul.topnav5 > li:nth-child(2):hover::after {
   background-color: rgb(196,196,196,70%);
   border-radius: 50px;
 }
+@media screen and (max-width:768px){
+  div.dhumburger{
+    display: block !important;
+    max-width: 100%;
+    height: 60px;
+    position: relative;
+    margin: auto;
+  }
+  nav{
+    display: none;
+  }
+  div.dhumburger>label > span{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 8px;
+  }
+  div.dhumburger > label >span::before{
+    content: "";
+    width: 70%;
+    height: 3px;
+    background-color: gray;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:6px;
+    margin: auto;
+    box-shadow: 0px 9px 0px gray,
+                0px -9px 0px gray;
+  }
+  
+  div.logo2{
+    display: none;
+  }
+  nav.nav2{
+    width: 60%;
+    display: block;
+    min-height: 100vh;
+    height: auto;
+    margin:0px;
+    position: absolute;
+    top:60px;
+    left:-100%;
+    z-index: 3;
+    background-color: rgb(196,196,196,90%);
+    transition: .5s;
+  }
+  #humburger{
+    display: none;
+    opacity: 0;
+  }
+  ul.topnavm{
+    display: block;
+    padding-left: 0px;
+    height: auto;
+  }
+  #humburger:checked ~ div.dhumburger nav.nav2{
+    left:0px;
+  }
+  ul.topnavm > li{
+    display: block;
+    padding-bottom: 15px;
+    padding-top:15px;
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+  }ul.topnavm > li:last-child{
+    border-bottom: 0px;
+  }
+  ul.topnavm1{
+    display: none;
+  }
+  ul.topnavm2{
+    display:none;
+  }
+  ul.topnavm3{
+    display: none;
+  }
+  ul.topnavm4{
+    display: none;
+  }
+  ul.topnavm > li:first-child:hover ul.topnavm1{
+    display: block;
+  }
+  ul.topnavm > li:nth-child(2):hover ul.topnavm2{
+    display: block;
+  }
+  ul.topnavm > li:nth-child(3):hover ul.topnavm3{
+    display: block;
+  }
+  ul.topnavm > li:nth-child(4):hover ul.topnavm4{
+    display: block;
+  }
+  ul.topnavm1 > li{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+
+  }
+  ul.topnavm2 > li{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+
+  }
+  ul.topnavm3 > li{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+
+  }
+  ul.topnavm4 > li{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+  }
+  ul.topnavm1 > li >a{
+    text-decoration: none;
+  }
+  ul.topnavm2 > li >a{
+    text-decoration: none;
+  }
+  ul.topnavm3 > li >a{
+    text-decoration: none;
+  }
+  ul.topnavm4 > li >a{
+    text-decoration: none;
+  }
+  li{
+    list-style: none;
+  }
+  div.topnavm1{
+    display:block;
+  }
+  header{
+    width:720px;
+    max-width: 100%;
+    height: auto;
+  }
+  div.toph{
+    width: 400px;
+    margin: auto;
+    max-width: 100%;
+  }
+  header>div.toph>p{
+    color: white;
+    font-size:20px;
+    font-weight: bold;
+    width: auto;
+    display: block;
+    margin-left:30px;
+    height: auto;
+    margin-top: 0px;
+    padding-top: 20px;
+  } 
+  p.p1{
+   padding-top: 30px;
+  }
+  p.p2::after{
+    top:45%;
+    right:0px;
+    bottom:0px;
+    left:67%;
+  }
+  p.p7{
+    padding-bottom: 30px;
+  }
+  div.logo{
+    right: 100px;
+    bottom: 40px;
+  }
+  div.gap{
+    max-width: 720px;
+    width: 100%;
+    transform: translateY(100%);
+    display: block;
+    position: relative;
+  }
+  div.trago{
+    width: 720px;
+    max-width: 100%;
+    margin:0 auto;
+    transform: translateY(0px);
+    border: 0px;
+    height: 30px;
+    background-image:url('../../images/trango.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: static;
+    display: block;
+    background-position-x: center;
+  }
+  div.arrowdown{
+    top:0px;
+    bottom: auto;
+    left:155px;
+    right: auto;
+    transform: translateY(-80%);
+  }
+/* ===============時間軸================= */
+
+  div.timeline{
+    width :100%!important;
+    height: auto!important;
+  }
+  ul.timeline1{
+    width:100%;
+    height: auto!important;
+  }
+  div.timeline{
+    height: auto;
+    margin: 0 auto;
+  }
+  div.timeline > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size:0;
+    height: auto!important;
+    margin-bottom: 80px !important;
+  }
+  div.timeline > ul::after{
+    content: "";
+    border-right: 8px dashed rgb(196,196,196,100%);
+    position: absolute;
+    z-index: -1;
+    right:0px!important;
+    top:0px!important;
+    width: 0px!important;
+    height: 0px!important;
+    
+  }
+  div.timeline > ul > li{
+    margin-top:0px;
+  }
+  div.timeline > ul> li > p{
+    font-size:14px;
+    line-height: 20px;
+  }
+  div.timeline > ul> li > p:first-child{
+    width: 100%!important;
+    height: auto !important;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left:0px!important;
+    border-radius: 0px 0px 0px 0px!important;
+    background-color: rgb(196,196,196,100%);
+    font-weight: 700;
+    line-height: 25px;
+     
+  }
+  div.timeline > ul> li > p:nth-child(2){
+    width: 100%!important;
+    height: 100%!important;
+    border-radius: 0px!important;
+    overflow: hidden;
+  }
+  div.timeline > ul>li:nth-child(even){
+    float: none!important;
+    transform: translateX(0)!important; 
+  }
+  div.timeline > ul>li:nth-child(1){
+    float: none !important;
+    transform: translateX(0) !important;
+  }
+  div.timeline > ul>li:nth-child(3){
+    transform: translate(0)!important;
+    float: none!important;
+    position: static!important;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  div.timeline > ul>li:nth-child(1)::before{
+    content: "2009年草創";
+    font-size: 20px;
+    position: absolute;
+    right:auto;
+    top:auto;
+    left:0px;
+    width: 100% !important;
+    font-weight: bold;
+  }
+  div.timeline > ul>li:nth-child(3)::before{
+    content: "2018年 評選為台北三大 live house 之一";
+    font-size:20px;
+    position: absolute;
+    right:auto;
+    top:auto;
+    left:0px;
+    font-weight: bold;
+   width: 100%;
+    top: -60px !important;
+  }
+  div.timeline > ul>li:nth-child(2)::before{
+    content: "2013年 擴大場地";
+    font-size: 20px;
+    position: absolute;
+    right:auto;
+    top:auto;
+    left:0px;
+    font-weight: bold;
+   
+  }
+  div.timeline > ul>li:nth-child(1)::after{
+    content:"";
+    border-radius: 50%;
+    background-color: rgb(245,150,170,1);
+    position: absolute;
+    right:0px!important;
+    top:0px!important;
+    width: 0px!important;
+    height: 0px!important;
+  }
+  div.timeline > ul>li:nth-child(3)::after{
+    content: "t";
+    border-radius: 50%;
+    background-color:rgb(245,150,170,1);
+    position: static !important;
+    /* right:0px!important;
+    top:0px!important; */
+    width: auto!important;
+    height: auto!important;
+    display: block;
+    clear: both;
+  }
+  div.timeline > ul>li:nth-child(2)::after{
+    content: "";
+    border-radius: 50%;
+    background-color: rgb(245,150,170,1);
+    position: absolute;
+    right:0px!important;
+    top:0px!important;
+    width: 0px!important;
+    height: 0px!important;
+  }
+  p.now{
+    width: 50%;
+    margin: auto;
+  }
+  h1{
+    display:inline-block;
+    margin-left:50%;
+    margin-top: -20px;
+    transform: translate(-50%,-10px) !important;
+    color: black;
+    font-size: 32px!important;
+    position: relative;
+    background-color: rgb(196,196,196,100%);
+    border-radius: 20px;
+    padding:5px 10px;
+  }
+  h1::after{
+    content: "";
+    position: absolute;
+    background-image: url("../../images/arrow.svg");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    width: 50px !important;
+    height: 50px !important;
+    right:18%!important;
+    top:-70%;
+  }
+  footer{
+    max-width: 100% !important;
+    /* max-width: 960px; */
+    display: block;
+    height: auto!important;
+  }
+ footer>p.pf1{
+    display: block;
+    position: static;
+    right: 0px;
+    bottom: 40px;
+  }
+  footer>p.pf2{
+    display: block;
+    position: static;
+    right: 0px;
+    bottom: -10px;
+  }
+  footer > div.copyright{
+    position: static;
+    display: block;
+  }
+  @media screen and (max-width:400px) {
+    div.dhumburger{
+      display: block !important;
+      max-width: 100%;
+      height: 60px;
+      position: relative;
+      margin: auto;
+    }
+    nav{
+      display: none;
+    }
+    div.dhumburger>label > span{
+      background-color: white;
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 8px;
+    }
+    div.dhumburger > label >span::before{
+      content: "";
+      width: 70%;
+      height: 3px;
+      background-color: gray;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left:6px;
+      margin: auto;
+      box-shadow: 0px 9px 0px gray,
+                  0px -9px 0px gray;
+    }
+    
+    div.logo2{
+      display: none;
+    }
+    nav.nav2{
+      width: 60%;
+      display: block;
+      min-height: 100vh;
+      height: auto;
+      margin:0px;
+      position: absolute;
+      top:60px;
+      left:-100%;
+      z-index: 3;
+      background-color: rgb(196,196,196,90%);
+      transition: .5s;
+    }
+    #humburger{
+      display: none;
+      opacity: 0;
+    }
+    ul.topnavm{
+      display: block;
+      padding-left: 0px;
+      height: auto;
+    }
+    #humburger:checked ~ div.dhumburger nav.nav2{
+      left:0px;
+    }
+    ul.topnavm > li{
+      display: block;
+      padding-bottom: 15px;
+      padding-top:15px;
+      padding-left: 10px;
+      border-bottom: 1px solid black;
+      text-decoration: none;
+    }ul.topnavm > li:last-child{
+      border-bottom: 0px;
+    }
+    ul.topnavm1{
+      display: none;
+    }
+    ul.topnavm2{
+      display:none;
+    }
+    ul.topnavm3{
+      display: none;
+    }
+    ul.topnavm4{
+      display: none;
+    }
+    ul.topnavm > li:first-child:hover ul.topnavm1{
+      display: block;
+    }
+    ul.topnavm > li:nth-child(2):hover ul.topnavm2{
+      display: block;
+    }
+    ul.topnavm > li:nth-child(3):hover ul.topnavm3{
+      display: block;
+    }
+    ul.topnavm > li:nth-child(4):hover ul.topnavm4{
+      display: block;
+    }
+    ul.topnavm1 > li{
+      padding-top: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid black;
+  
+    }
+    ul.topnavm2 > li{
+      padding-top: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid black;
+  
+    }
+    ul.topnavm3 > li{
+      padding-top: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid black;
+  
+    }
+    ul.topnavm4 > li{
+      padding-top: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid black;
+    }
+    ul.topnavm1 > li >a{
+      text-decoration: none;
+    }
+    ul.topnavm2 > li >a{
+      text-decoration: none;
+    }
+    ul.topnavm3 > li >a{
+      text-decoration: none;
+    }
+    ul.topnavm4 > li >a{
+      text-decoration: none;
+    }
+    li{
+      list-style: none;
+    }
+    div.topnavm1{
+      display:block;
+    }
+    header{
+      width:720px;
+      max-width: 100%;
+      height: auto;
+    }
+    div.toph{
+      width: 400px;
+      margin: auto;
+      max-width: 100%;
+    }
+    header>div.toph>p{
+      color: white;
+      font-size:20px;
+      font-weight: bold;
+      width: auto;
+      display: block;
+      margin-left:30px;
+      height: auto;
+      margin-top: 0px;
+      padding-top: 20px;
+    } 
+    p.p1{
+     padding-top: 30px;
+    }
+    p.p2::after{
+      top:45%;
+      right:0px;
+      bottom:0px;
+      left:67%;
+    }
+    p.p7{
+      padding-bottom: 30px;
+    }
+    div.logo{
+      right: 40px;
+      bottom: 50px;
+      width: 90px;
+      height: 110px;
+    }
+    div.gap{
+      max-width: 720px;
+      width: 100%;
+      transform: translateY(100%);
+      display: block;
+      position: relative;
+    }
+    div.trago{
+      width: 720px;
+      max-width: 100%;
+      margin:0 auto;
+      transform: translateY(0px);
+      border: 0px;
+      height: 30px;
+      background-image:url('../../images/trango.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: static;
+      display: block;
+      background-position-x: center;
+    }
+    div.arrowdown{
+      top:0px;
+      bottom: auto;
+      left:155px;
+      right: auto;
+      transform: translateY(-80%);
+      position: static;
+      display: block !important;
+      width: auto;
+      margin: 0 auto!important;
+    }
+  /* ===============時間軸================= */
+  
+    div.timeline{
+      width :100%!important;
+      height: auto!important;
+    }
+    ul.timeline1{
+      width:100%;
+      height: auto!important;
+    }
+    div.timeline{
+      height: auto;
+      margin: 0 auto;
+    }
+    div.timeline > ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size:0;
+      height: auto!important;
+      margin-bottom: 80px !important;
+    }
+    div.timeline > ul::after{
+      content: "";
+      border-right: 8px dashed rgb(196,196,196,100%);
+      position: absolute;
+      z-index: -1;
+      right:0px!important;
+      top:0px!important;
+      width: 0px!important;
+      height: 0px!important;
+      
+    }
+    div.timeline > ul > li{
+      margin-top:0px;
+    }
+    div.timeline > ul> li > p{
+      font-size:14px;
+      line-height: 20px;
+    }
+    div.timeline > ul> li > p:first-child{
+      width: 100%!important;
+      height: auto !important;
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left:0px!important;
+      border-radius: 0px 0px 0px 0px!important;
+      background-color: rgb(196,196,196,100%);
+      font-weight: 700;
+      line-height: 25px;
+       
+    }
+    div.timeline > ul> li > p:nth-child(2){
+      width: 100%!important;
+      height: 100%!important;
+      border-radius: 0px!important;
+      overflow: hidden;
+    }
+    div.timeline > ul>li:nth-child(even){
+      float: none!important;
+      transform: translateX(0)!important; 
+    }
+    div.timeline > ul>li:nth-child(1){
+      float: none !important;
+      transform: translateX(0) !important;
+    }
+    div.timeline > ul>li:nth-child(3){
+      transform: translate(0)!important;
+      float: none!important;
+      position: static!important;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    div.timeline > ul>li:nth-child(1)::before{
+      content: "2009年草創";
+      font-size: 20px;
+      position: absolute;
+      right:auto;
+      top:auto;
+      left:0px;
+      width: 100% !important;
+      font-weight: bold;
+    }
+    div.timeline > ul>li:nth-child(3)::before{
+      content: "2018年 評選為台北三大 live house 之一";
+      font-size:20px;
+      position: absolute;
+      right:auto;
+      top:auto;
+      left:0px;
+      font-weight: bold;
+     width: 100%;
+      top: -60px !important;
+    }
+    div.timeline > ul>li:nth-child(2)::before{
+      content: "2013年 擴大場地";
+      font-size: 20px;
+      position: absolute;
+      right:auto;
+      top:auto;
+      left:0px;
+      font-weight: bold;
+     
+    }
+    div.timeline > ul>li:nth-child(1)::after{
+      content:"";
+      border-radius: 50%;
+      background-color: rgb(245,150,170,1);
+      position: absolute;
+      right:0px!important;
+      top:0px!important;
+      width: 0px!important;
+      height: 0px!important;
+    }
+    div.timeline > ul>li:nth-child(3)::after{
+      content: "t";
+      border-radius: 50%;
+      background-color:rgb(245,150,170,1);
+      position: static !important;
+      /* right:0px!important;
+      top:0px!important; */
+      width: auto!important;
+      height: auto!important;
+      display: block;
+      clear: both;
+    }
+    div.timeline > ul>li:nth-child(2)::after{
+      content: "";
+      border-radius: 50%;
+      background-color: rgb(245,150,170,1);
+      position: absolute;
+      right:0px!important;
+      top:0px!important;
+      width: 0px!important;
+      height: 0px!important;
+    }
+    p.now{
+      width: 50%;
+      margin: auto;
+    }
+    h1{
+      display:inline-block;
+      margin-left:50%;
+      margin-top: -20px;
+      transform: translate(-50%,-10px) !important;
+      color: black;
+      font-size: 32px!important;
+      position: relative;
+      background-color: rgb(196,196,196,100%);
+      border-radius: 20px;
+      padding:5px 10px;
+    }
+    h1::after{
+      content: "";
+      position: absolute;
+      background-image: url("../../images/arrow.svg");
+      background-repeat:no-repeat;
+      background-size: 100%;
+      width: 50px !important;
+      height: 50px !important;
+      right:18%!important;
+      top:-70%;
+    }
+    footer{
+      max-width: 100% !important;
+      /* max-width: 960px; */
+      display: block;
+      height: auto!important;
+    }
+   footer>p.pf1{
+      display: block;
+      position: static;
+      right: 0px;
+      bottom: 40px;
+    }
+    footer>p.pf2{
+      display: block;
+      position: static;
+      right: 0px;
+      bottom: -10px;
+    }
+    footer > div.copyright{
+      position: static;
+      display: block;
+    }
+  }
