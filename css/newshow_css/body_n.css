@@ -8,28 +8,6 @@ div.content{
     border-radius: 45px;
     margin-bottom: 130px;
 }
-div.content::before{
-    content: "";
-    background-image: url("../../images/arrow-left.svg");
-    background-repeat: no-repeat;
-    width: 91px;
-    height: 91px;
-    position: absolute;
-    bottom: -30px;
-    right: 120px; 
-    cursor: pointer;
-}
-div.content::after{
-    content: "";
-    background-image: url("../../images/arrow-right.svg");
-    background-repeat: no-repeat;
-    width: 91px;
-    height: 91px;
-    position: absolute;
-    bottom: -30px;
-    right: 30px; 
-    cursor: pointer;
-}
 div.d1{
     width: 534px;
     height: 380px;
