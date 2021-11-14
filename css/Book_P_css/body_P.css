@@ -32,17 +32,7 @@ div.time{
     background-color: rgb(196,196,196,41%);
     border-radius: 18px;
 }
-div.time::after{
-    content: "";
-    background-image:url('../../images/search.svg');
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top:20px;
-    right:18px;
-    cursor: pointer;
-}
+
 div.body2{
     border: 5px solid black;
     border-radius: 53px;
@@ -50,9 +40,11 @@ div.body2{
     height: auto;
     margin: 0 auto;
     margin-top: 25px;
-    position: relative;
-   
-
+    position: relative;  
+}
+div.time>img{
+    padding-left: 10px;
+    cursor: pointer;
 }
 span.left_btn{
     display: inline-block;
@@ -307,13 +299,15 @@ div.remark > textarea{
 div.agreement{
     margin: 0 auto;
     margin-top: 150px;
-    width: 540px;
-    height: 250px;
+    width: 50%;
+    height: auto;
     background-color: white;
     overflow-x:hidden;
     overflow-y:auto;
     padding: 10px;
     position: relative;
+    max-width: 100%;
+    border: 1px solid red;
 }
 
 div.agreement::-webkit-scrollbar{
@@ -330,16 +324,34 @@ div.agreement::-webkit-scrollbar{
 }
 pre{
     margin: 0;
+    padding: 5% 5%;
+    border: 1px solid red;
+}
+div.bcolor{
+    border: 1px solid red;
+    display: block;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 100%;
+    z-index: -1;
+    position: relative;
+    transform: translateY(0%);
+    height: 0;
 }
 span.bcolor{
-    width: 630px;
-    height: 350px;
+    margin: auto;
+    width: 60%;
     border-radius:47px ;
-    position: absolute;
     background-color: rgb(196,196,196,1);
-    bottom: 365px;
-    left:283px;
-    z-index: -1;
+    border: 1px solid red;
+    display: block;
+    height: 500px;
+    position: absolute;
+    top:-450px;
+    left:50%;
+    transform: translateX(-50%);
+
+    
 }
 button.btn{
     border-radius: 43px;
@@ -374,24 +386,26 @@ button.btn{
     }
     div.p1 > div.p1_pic{
         width: 100%;
-        max-width: 100%;
+        
     }
     div.p1{
         margin-left:10px;
         margin-right: 5px;
-        width: 395px;
-        height: 300px;
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
     }
     div.p2{
         margin-right:10px;
         margin-left:5px;
-        width: 395px;
-        height: 300px;
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
     }
     div.p2_pic{
         /* height: auto; */
         width: 100%;
-        max-width: 100%;
+        /* max-width: 100%; */
        
 
     }
@@ -410,7 +424,10 @@ button.btn{
     }
     div.time{
         max-width:100%;
-        margin-left: 50%;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     div.body2 > p.t1{
         max-width: 90%;
@@ -421,6 +438,144 @@ button.btn{
         max-width: 100%;
     }
     div.content{
+        width: 90%;
+    }
+    div.p1_pic{
         width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+    div.p1_pic > img{
+        vertical-align: top;
+    }
+    div.p2_pic{
+        width: 100%;
+        height: auto;
+    }
+    div.text1{
+        display: block;
+        height: auto;
+        z-index: -2;
+        overflow: hidden;
+    }
+    div.text1 > p{
+        position: static;
+        
+        height: auto;
+        display: inline-block;
+        z-index: -2;
+        /* white-space: nowrap; */
+        font-size: 1rem;    
+        padding-bottom: 5px;         
+    }
+    p.price1{
+        margin-left: 5%;
+        width: 30%;
+        transform: translateY(-40px);
+    }
+    p.name1{
+        width:55%;
+        margin-left: 5%;
+        transform: translateY(-50px);
+    }
+    div.p2_pic{
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+    div.p2_pic > img{
+        vertical-align: top;
+    }
+    div.text2{
+        display: block;
+        height: auto;
+        z-index: -2;
+        overflow: hidden;
+    }
+    div.text2 > p{
+        position: static;
+        
+        height: auto;
+        display: inline-block;
+        z-index: -2;
+        /* white-space: nowrap; */
+        font-size: 1rem;    
+        padding-bottom: 5px;         
+    }
+    p.price2{
+        margin-left: 5%;
+        width: 30%;
+        transform: translateY(-40px);
+    }
+    p.name2{
+        width:55%;
+        margin-left: 5%;
+        transform: translateY(-50px);
+    }
+    div.form_left{
+        display:block;
+        margin: auto;
+        margin-top: 200px;
+        max-width: 100%;
+    }
+    div.form_right{
+        display:block;
+        margin: auto;
+        margin-top: 120px;
+        max-width: 100%;
+    }
+    p.fee{
+        padding: 0;
+        text-align: right;
+    }
+    p.nresult{
+        text-align: center;
+        padding: 0;
+    }
+    div.uresult{
+        width: auto;
+    }
+    div.top{
+        max-width: 100%;
+    }
+    div.top1{
+        max-width: 100%;
+        margin: 0 auto;
+        margin-left: 45%;
+     }
+    h1{
+        max-width:100% ;
+    }
+    div.time{
+        max-width: 100%;
+        margin-left: 0;
+    } 
+    div.timetop{
+        display: flex;
+        justify-content: right;
+    }
+    button.btn{
+        margin-top: 80px;
+    }
+    textarea{
+        max-width: 100%;
+        margin-left: 0px!important;
+    }
+    div.remark{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    div.bcolor{
+        transform: translateY(0%);
+        height: 0;
+    }
+    span.bcolor{
+        height: 500px;
+        position: absolute;
+        top:-450px;
+        left:50%;
+        transform: translateX(-50%);
     }
 }
