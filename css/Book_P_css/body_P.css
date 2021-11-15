@@ -184,6 +184,8 @@ p.price2{
 p.line1{
     background-color: rgb(196,196,196,1);
     height: 3px;
+    margin-top: 60px;
+    margin-bottom: 100px;
 }
 div.form > h1{
     text-align: center;
@@ -223,16 +225,16 @@ p.uname{
     position: relative;
 }
 input.uname{
-    width: 150px;
+    width: 35%;
     margin-right: 150px;
 }
 input.cellphone{
-    width: 150px;
+    width: 35%;
     margin-right: 150px;
 }
 input.e_mail{
     margin-right:0px;
-    width:300px;
+    width:80%;
 }
 p.undere_mail{
     margin-left: 100px;
@@ -307,7 +309,6 @@ div.agreement{
     padding: 10px;
     position: relative;
     max-width: 100%;
-    border: 1px solid red;
 }
 
 div.agreement::-webkit-scrollbar{
@@ -340,14 +341,14 @@ div.bcolor{
 }
 span.bcolor{
     margin: auto;
-    width: 60%;
+    width: 55%;
     border-radius:47px ;
     background-color: rgb(196,196,196,1);
     border: 1px solid red;
     display: block;
-    height: 500px;
+    height: 350px;
     position: absolute;
-    top:-450px;
+    top:-310px;
     left:50%;
     transform: translateX(-50%);
 
@@ -567,19 +568,10 @@ button.btn{
         align-items: center;
         flex-direction: column;
     }
-    div.bcolor{
-        transform: translateY(0%);
-        height: 0;
-    }
-    span.bcolor{
-        height: 500px;
-        position: absolute;
-        top:-450px;
-        left:50%;
-        transform: translateX(-50%);
+     div.bcolor{
+        display: none;
     }
     
-    }
    
 
 @media screen and (max-width:900px){
@@ -761,7 +753,19 @@ button.btn{
         position: static;
         display: block;
       }
+    div.top1 > h1{
+        height:auto;
+    }
     
+    div.agreement{
+        width: 80%;
+        height: 200px;
+        margin-top: 80px;
+    }
+    div.remark > textarea {
+        width: 80%;
+        height: 150px;
+    }
 }
 @media screen and (max-width:500px) {
         div.time > h2{
@@ -807,4 +811,25 @@ button.btn{
             transform: translate(200%,-100%);
         }
         
+}
+@media screen and (max-width:432px) {
+    div.top1 > h1{
+        font-size:32px;
+    }
+    div.time > h2{
+        font-size: 16px;
+        margin-left: 0px;
+    }
+    div.time > input{
+        width: 35px;
+    }
+    div.top{
+        margin-top: 50px;
+    }
+    div.content{
+        margin-top: 80px;
+    }
+    p.undere_mail{
+        margin-left: 70px;
+    }
 }
