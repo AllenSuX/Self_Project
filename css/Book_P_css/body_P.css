@@ -1,5 +1,9 @@
 *{
     box-sizing: border-box;
+   
+}
+body{
+    background-color: rgb(242,238,238,1);
 }
 div.content{
     width: 1200px;
@@ -27,11 +31,11 @@ div.time{
     height: 65px;
     vertical-align: middle;
     margin-left: 728px;
-    padding: 5px,5px,10px,5px;
     position: relative;
     background-color: rgb(196,196,196,41%);
     border-radius: 18px;
 }
+
 
 div.body2{
     border: 5px solid black;
@@ -63,7 +67,6 @@ div.body_content{
     flex-flow: row;
 }
 p.t1{
-    /* border: 1px solid black; */
     border-radius: 20px;
     width: 940px;
     height: 40px;
@@ -323,13 +326,8 @@ div.agreement::-webkit-scrollbar{
     background-color: rgb(196,196,196,1);
     border-radius: 40px;
 }
-pre{
-    margin: 0;
-    padding: 5% 5%;
-    border: 1px solid red;
-}
+
 div.bcolor{
-    border: 1px solid red;
     display: block;
     font-size: 16px;
     margin: 0 auto;
@@ -344,7 +342,6 @@ span.bcolor{
     width: 55%;
     border-radius:47px ;
     background-color: rgb(196,196,196,1);
-    border: 1px solid red;
     display: block;
     height: 350px;
     position: absolute;
