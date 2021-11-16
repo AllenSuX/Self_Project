@@ -365,6 +365,10 @@ button.btn{
     margin-bottom: 50px;
     cursor: pointer;
 }
+.-fou{
+    position: relative;
+    width: 100px;
+}
 
 @media screen and (max-width:1200px){
     header >div.top{

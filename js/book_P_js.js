@@ -1,19 +1,26 @@
 x = window.matchMedia("(max-width:800px)")
 
-function rwd1(x){
+$(function (){
     
     if (x.matches){
-        console.log("123");
-        $("div.time > input").focus(function(){
-            console.log("123");
-            $(e.target).css("width","100px");
-            console.log("123");
+       $("div.time > input").focus(function(e){
+           
+            $(e.target).css({
+                position: relative,
+                width: 100,
+                });
             
         });
-        
-    }
-}
-rwd1(x);
+        $("div.time > input").blur(function(e){
+           
+            $(e.target).css({
+                position: satic,
+                width: 40,
+                });
+        }); 
+    } 
+})
+
 
 var mobileHover = function () {
     $('*').on('touchstart', function () {

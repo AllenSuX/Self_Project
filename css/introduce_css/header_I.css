@@ -297,4 +297,12 @@ div.top1{
     font-size: 48px;
     padding: 10px;
   }
- 
+ @media screen and (max-width:1200px) {
+   div.toppack{
+    display: flex;
+    max-width: 100%;
+   }
+   div.top1{
+     max-width: 100%;
+   }
+ }
