@@ -474,7 +474,7 @@ div.top1{
       height: auto;
     }
     div.content{
-      width:720px;
+      width: 90% !important;
       max-width: 100%;
       display: flex;
       flex-wrap: wrap;
