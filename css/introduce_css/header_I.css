@@ -318,7 +318,7 @@ div.top1{
    div.top1{
      display: flex;
      width: 100%;
-     margin: 50px auto;
+     margin: 0;
      justify-content: right;
    }
    div.top1 h1{
