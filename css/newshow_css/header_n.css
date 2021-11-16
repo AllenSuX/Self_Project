@@ -21,6 +21,7 @@
   body{
     margin: 0;
     padding: 0;
+    background-color: rgb(242,238,238,1);
   }
   nav{
     position: relative;
@@ -543,8 +544,7 @@ div.top1{
     }
     div.button_area1{
       width: 200px;
-      margin-top: 40px;
-      margin-bottom: 10px;
+      margin-top: -50px;
     }
     div.button_area1 > span{
       width:50px;
@@ -564,7 +564,6 @@ div.top1{
     } 
     footer{
       max-width: 100% !important;
-      /* max-width: 960px; */
       display: block;
       height: auto!important;
     }

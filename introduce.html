@@ -1,25 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>場地介紹</title>
     <link href="./css/introduce_css/header_I.css" rel="stylesheet">
     <link href="./css/introduce_css/body_I.css" rel="stylesheet">
     <link href="./css/introduce_css/footer_I.css" rel="stylesheet">
-    <style type="text/css">
-        body{
-            background-color: rgb(242,238,238,1);
-        }
-    </style>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/introduce.js"></script>   
 </head>
 <body>
+    <input type="checkbox" name="" id="humburger" style="display:none">
+    <div class ="dhumburger" style="display: none;">
+      <div class = "logo2">
+        <img src="./images/logo2black.svg">
+      </div>
+      <label for="humburger"><span></span></label>
+      <nav class = "nav2">
+          <ul class = "topnavm">
+            <li><a>關於我們</a>
+              <div class = "topnavm1">
+                <ul class ="topnavm1">
+                  <li><a href="./about_us.html" >初響起源</a></li>
+                  <li><a href="./introduce.html">場地介紹</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a>最新消息</a>
+              <div class = "topnavm2">
+                <ul class ="topnavm2">
+                  <li><a>最新公告(施工中)</a></li>
+                  <li><a>最新活動(施工中)</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a>展演活動</a>
+              <div class = "topnavm3">
+                <ul class ="topnavm3">
+                  <li><a href="./newshow.html">最新展演</a></li>
+                  <li><a href="./pass_show.html">展演回顧</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a>場地租借與售票</a>
+              <div class = "topnavm4">
+                <ul class ="topnavm4">
+                  <li><a href="./Book_B.html">預約場地租借</a></li>
+                  <li><a href="./Book_P.html">預約購票</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          
+      </nav>
+      </div>
     <header>
         <div class="top">
             <div class = "toppack">
-            <div class="logo">
-                <a href="./index.html"><img src="./images/logo2black.svg"></a>
-            </div>
-            <ul class = "topnav">
+                <div class="logo">
+                    <a href="./index.html"><img src="./images/logo2black.svg"></a>
+                </div>
+             <ul class = "topnav">
                 <li><a>關於我們</a>
                   <div class = "topnav2">
                     <ul class ="topnav2">
@@ -59,7 +101,6 @@
                 </div>
         </div>
     </header>
-    <div class="packcontent">
     <div class="content">
         <div class ="img">
             <img src="./images/7.jpg">
@@ -97,19 +138,20 @@
                         QSCMX700 x3
                     </p>
                     <p>
-                        舞 台 監 聽 及 效 果 揚 聲 器 用 功 率 擴 大 機
+                        舞 台 監 聽 及 
+                        效 果 揚 聲 器 用 功 率 器 
                         CROWNMACRO - TECH1200 x2
                     </p>
                     <p>
                         <label class="l8">參 數 式 音 頻 等 化 器</label>
-                        <label class="l9">Bose-802C II x1</label>
+                       <label class="l9">Bose-802C II x1</label>
                         ASHLY-3102 x1
                     </p>
                 </div>
                 <div class="right">
                     <p>
                         <label class="l10">有線麥克風 ：</label>
-                        <label class="l11">AKG-D3700S x8</label>
+                      <label class="l11">AKG-D3700S x8</label>
                         Shore-91 x2
                     </p>
                     <p>
@@ -121,13 +163,13 @@
                     </p>
                     <p>
                         <label class="l15">麥克風架：</label>
-                        T型麥克風立架 x8
+                       <p> T型麥克風立架 x8</p>
                     </p>
                 </div>
             </div>
         </div>   
     </div>
-    </div>
+    
 </body>
 <footer>
     <p>初響音樂展演空間</p>

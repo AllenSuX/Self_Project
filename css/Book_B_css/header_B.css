@@ -21,6 +21,7 @@ div.top{
 body{
     margin: 0;
     padding: 0;
+    background-color: rgb(242,238,238,1);
 }
 nav{
     position: relative;
