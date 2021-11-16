@@ -540,6 +540,9 @@ div.top1{
      margin-left: 9%;
      margin-top: 10px!important;
    }
+   div.left{
+     margin-left: 9%!important;
+   }
    div.content{
      margin-bottom: 30px!important;
    }
