@@ -2,92 +2,251 @@
   <head>
     <meta charset="utf-8" />
     <title>Swiper demo</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
 
     <!-- Demo styles -->
     <style>
-      html,
-      body {
-        position: relative;
-        height: 100%;
-      }
-
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
-
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        /* display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex; */
-        display: flex;
-        /* -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center; */
-        justify-content: center;
-        /* -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center; */
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+     * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    ul {
+      list-style: none;
+    }
+    
+    .box {
+      width: 960px;
+      height: 628px;
+      padding: 8px;
+      border: 1px solid green;
+      margin: 100px auto;
+    }
+    
+    .inner {
+      position: relative;
+      overflow: hidden;
+      height: 628px;
+    }
+    
+    #imglist {
+      width: 5760px;
+      position: absolute;
+      left: 0;
+      transition: left 300ms linear;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    .list {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      margin-left: -85px;
+    }
+    
+    .list i {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #fff;
+      color: #333;
+      float: left;
+      font-style: normal;
+      line-height: 20px;
+      font-size: 14px;
+      text-align: center;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    
+    .list i:last-child {
+      margin-right: 0;
+    }
+    
+    .list i.current {
+      background-color: skyblue;
+      color: #fff;
+    }
+    
+    .arrow {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      margin-top: -30px;
+    }
+    
+    .arrow-left,
+    .arrow-right {
+      width: 30px;
+      height: 60px;
+      position: absolute;
+      font: 20px/60px "consolas";
+      color: #fff;
+      background-color: rgba(0, 0, 0, .3);
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    .arrow-right {
+      right: 0;
+    }
     </style>
+    
   </head>
 
   <body>
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+    <div class="box" id="box">
+      <div class="inner" id="inner">
+        <ul id="imglist">
+          <li>
+            <a href="#" ><img src="./images/bigpictureM.jpg" alt=""></a>
+          </li>
+          <li>
+            <a href="#" ><img src="./images/miwaM.jpg" alt=""></a>
+          </li>
+          <li>
+            <a href="#" ><img src="./images/trush1M.jpg" alt=""></a>
+          </li>
+          <li>
+            <a href="#" ><img src="./images/trushM.jpg" alt=""></a>
+          </li>
+          <li>
+            <a href="#" ><img src="images/yoasobiM.jpg" alt=""></a>
+          </li>
+          <li>
+            <a href="#" ><img src="images/mmM.jpg" alt=""></a>
+          </li>
+        </ul>
+        <div class="list">
+          <i class="current"></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+        <div class="arrow">
+          <span class="arrow-left">&lt;</span>
+          <span class="arrow-right">&gt;</span>
+        </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
+  </div>
+  <script>
+    // 獲取DOM
+var yuan = document.querySelectorAll("i");
+var li = document.querySelector("#imglist li");
+var ul = document.querySelector("#imglist");
+var imgs = document.querySelector("#imglist");
+var right = document.querySelector(".arrow-right");
+var left = document.querySelector(".arrow-left");
+var box = document.querySelector(".box");
+window.onload = function() {
+  //------------------------------------這裡是點擊小圓圈，控制圖片的切換
+  //循環小圓點 註冊小圓點
+  for (var i = 0; i < yuan.length; i++) {
+    //我們需要這裡面的i 必須提前拿出來，要不最後i的值就是最後一個數值瞭
+    yuan[i].num = i;
+    //註冊事件
+    yuan[i].onmouseover = function() {
+      // 現在要循環將樣式移除
+      for (var j = 0; j < yuan.length; j++) {
+        yuan[j].classList.remove("current");
+      }
+      //這裡是為瞭將點擊的小圓點 增加上樣式
+      this.classList.add("current");
+      var num = this.num;
+      //到這裡的思路就是點擊小圓點 將圖片進行移動，向左面移動，上面css做瞭相應的定位操作
+      //移動的距離就是 n 乘以 一張圖片的寬度，
+      //n 就是選擇的小圓點的 坐標-----i(num)
+      //圖片的寬度 box.offsetWidth
+      var left = num * li.offsetWidth;
+      // console.log(num, box.offsetWidth, left);
+      imgs.style.left = `-${left}px`;
 
-    <!-- Swiper JS -->
-    <script src="./js/swiper-bundle.min.js"></script>
+      //這裡小原點聯動左右按鈕
+      for (var p = 0; p < yuan.length; p++) {
+        //清除全部樣式（小圓點）
+        yuan[p].classList.remove("current");
+      }
+      //給當前的小圓點增加樣式
+      yuan[num].classList.add("current");
+      //這裡這個位置比較關鍵，在上面設置完樣式之後，記得將此num賦值給全局的index
+      index = this.num;
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+
+    }
+  }
+  //------------------------------------以上是點擊小圓圈，控制圖片的切換
+  //------------------------------------下面是開始右面輪播，控制圖片的切換
+  //首先定義一個全局的index，這個index的作用依舊是控制圖片的切換
+  var index = 0;
+  right.onclick = function() {
+    index++;
+    //這裡要對index做一下判斷，如果不做判斷，可以試想一下，
+    //隻要你一點擊，index就會無限的增大，增大到你“無法自拔”
+    if (index == ul.children.length) {
+      //如果坐標為6的話，顯示應該顯示第1張圖片，所以要復位 即index=0
+      index = 0;
+    }
+    var left = index * li.offsetWidth;
+    // console.log(index, box.offsetWidth, left);
+    imgs.style.left = `-${left}px`;
+
+    //點擊右面增加聯動小圓點的效果
+    for (var n = 0; n < yuan.length; n++) {
+      //清除全部樣式（小圓點）
+      yuan[n].classList.remove("current");
+    }
+    //給當前的小圓點增加樣式
+    yuan[index].classList.add("current");
+  };
+  //------------------------------------以上是結束右面輪播，控制圖片的切換
+
+  //------------------------------------下面是開始左面輪播，控制圖片的切換
+  left.onclick = function() {
+    index--;
+    //這裡同右點擊一樣，需要做一下判斷，
+    console.log(index);
+    if (index == -1) {
+      index = ul.children.length - 1;
+    }
+    var left = index * li.offsetWidth;
+    // console.log(index, box.offsetWidth, left);
+    // console.log(left);
+    imgs.style.left = `-${left}px`;
+
+    //這個位置做的是 左面點擊聯動小圓點
+    for (var m = 0; m < yuan.length; m++) {
+      //清除全部樣式（小圓點）
+      yuan[m].classList.remove("current");
+    }
+    //給當前的小圓點增加樣式
+    yuan[index].classList.add("current");
+  };
+  //------------------------------------上面是結束左面輪播，控制圖片的切換
+  //------------------------------------開始設置自動輪播
+  var timer = setInterval(function() {
+    right.onclick();
+  }, 1000);
+  //------------------------------------以上是自動輪播結束
+  //------------------------------------設置鼠標進來就停止開始
+  box.onmouseover = function() {
+    clearInterval(timer);
+  };
+  //------------------------------------設置鼠標進來就停止結束
+  //------------------------------------設置鼠標出去就停止開始
+  box.onmouseout = function() {
+    timer = setInterval(function() {
+      right.onclick();
+    }, 1000);
+  };
+  //------------------------------------設置鼠標出去就停止結束
+}
+  </script>
   </body>
 </html>

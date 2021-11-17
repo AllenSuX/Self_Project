@@ -11,6 +11,8 @@ div.top_header{
   height:628px;
   font-size: 0px;
   position: relative;
+  display: flex;
+  background-color:rgb(38,30,71);
 }
 div.top_color{
   background-color:rgb(38,30,71);
@@ -27,10 +29,15 @@ div.top_image{
   font-size: 16px;
   vertical-align: top;
 }
-div.top_image>img{
+/* div.top_image>img{
 width: 1039px;
 height: 100%;
-}
+} */
+div.box>img{
+  width: 1039px;
+  height: 100%;
+  }
+
 div.logo{
   position: absolute;
   top:49px;
@@ -40,3 +47,88 @@ div.logo{
   font-size: 16px;
 }
 /* ====================Body content========================================== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.box {
+  width: 960px;
+  height: 628px;
+  margin: 0 auto;
+}
+
+.inner {
+  position: relative;
+  overflow: hidden;
+  height: 628px;
+}
+
+#imglist {
+  width: 5760px;
+  position: absolute;
+  left: 0;
+  transition: left 300ms linear;
+}
+
+#imglist > li {
+  float: left;
+}
+
+.list {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -85px;
+}
+
+.list i {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #333;
+  float: left;
+  font-style: normal;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.list i:last-child {
+  margin-right: 0;
+}
+
+.list i.current {
+  background-color: gray;
+  color: #fff;
+}
+
+.arrowtop {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -30px;
+}
+
+/* .arrowtop-left,
+.arrowtop-right {
+  width: 30px;
+  height: 60px;
+  position: absolute;
+  font: 20px/60px "consolas";
+  color: #fff;
+  background-color: rgba(0, 0, 0, .3);
+  text-align: center;
+  cursor: pointer;
+} */
+
+/* .arrowtop-right {
+  right: 0;
+} */
