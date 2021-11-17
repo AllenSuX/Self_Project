@@ -46,7 +46,7 @@ intro1.addEventListener("click",function(){
    close_btn3.addEventListener("click",function(){
       intro3_on.style.display="none";
       iframe3.setAttribute("src","");
-      iframe3.setAttribute("src","https://www.youtube.com/embed/jM3HXNusWA0");
+      iframe3.setAttribute("src","https://www.youtube.com/embed/j2311FZWoFQ");
    });
 
 var to_top = document.getElementsByClassName("arrow_img")[0];
