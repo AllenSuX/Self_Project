@@ -479,11 +479,12 @@ div.top1{
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      min-height: 1200px!important;
       min-width: 320px;
       padding-left: 20px;
       padding-right: 20px;
       margin-top: 0px!important;
+      height: auto!important;
+      
 
      
     }
@@ -500,15 +501,14 @@ div.top1{
       margin-top: 50px;
       margin-left: 10px;
       margin-right:10px;
-      flex-basis:content;
     }
     div.content > div.d1>div.b1{
       max-width: 100%;
-      height: auto;
+      height: auto!important;
       }
       div.content > div.d2>div.b2{
         max-width: 100%;
-        height: auto;
+        height: auto!important;
         }
     div.content > div.d2{
       display: block;
@@ -556,6 +556,7 @@ div.top1{
     }
     span.go_left{
       cursor: pointer;
+      
     }
     div.button_area > img{
       width: 100%;

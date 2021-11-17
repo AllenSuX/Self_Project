@@ -6,6 +6,8 @@
     <link href="./css/Book_B_css/header_B.css" rel="stylesheet">
     <link href="./css/Book_B_css/body_B.css" rel="stylesheet">
     <link href="./css/Book_B_css/footer_B.css" rel="stylesheet">
+    <script src ="./js/jquery-3.6.0.js"></script>
+    
 </head>
 <body>
     <header>
@@ -68,12 +70,36 @@
                 <p class="p5">空</p>
                 <p class="p6">已預約</p>
             </div>
-            <div class="calendar">
-                <div>
-                    <img src="./images/calendar.png">
+            <!-- <div class="calendar"> -->
+                <div class="calendar">
+                  <div class="title">
+                    <h1 class="green" id="calendar-title">Month</h1>
+                    <h2 class="green small" id="calendar-year">Year</h2>
+                    <div class ="arrowT"> 
+                    <a href="" id="prev"><img src="./images/arrow-left.svg"></a>
+                    <a href="" id="next"><img src="./images/arrow-right.svg"></a>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <div class="lightgrey body-list">
+                      <ul>
+                        <li>MON</li>
+                        <li>TUE</li>
+                        <li>WED</li>
+                        <li>THU</li>
+                        <li>FRI</li>
+                        <li>SAT</li>
+                        <li>SUN</li>
+                      </ul>
+                    </div>
+                    <div class="darkgrey body-list">
+                      <ul id="days">
+                      </ul>
+                    </div>
+                  </div>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
         <div class="c_right">
             <h2>2022年7月1日(五)</h2>
             <div class ="c1">
@@ -135,6 +161,7 @@
                 <button type="submit" class="btn">同意並送出</button>
         </form>
     </div>
+    <script src ="./js/Book_B.js"></script>
 </body>
 <footer>
     <p>初響音樂展演空間</p>
