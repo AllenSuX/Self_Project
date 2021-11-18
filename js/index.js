@@ -1,4 +1,6 @@
 
+var y = window.matchMedia("(max-width: 1400px) and (min-width: 992px)")
+if(y.matches){
 var intro1 = document.getElementsByTagName("img")[10];
 var body1 = document.getElementsByClassName("body1")[0];
 var intro1_on = body1.querySelector("div.intro1");
@@ -50,6 +52,7 @@ intro1.addEventListener("click",function(){
       iframe3.setAttribute("src","");
       iframe3.setAttribute("src","https://www.youtube.com/embed/j2311FZWoFQ");
    });
+}
 
 var to_top = document.getElementsByClassName("arrow_img")[0];
     to_top.addEventListener("click",function(){
@@ -171,11 +174,48 @@ window.onload = function() {
   box.onmouseout = function() {
     timer = setInterval(function() {
       right.onclick();
-    }, 2000);
+    }, 3000);
   };
   //------------------------------------設置鼠標出去就停止結束
 }
+var x = window.matchMedia("(max-width: 991.98px)")
+    console.log("hi");
+    if (x.matches) { 
+        $(".intro1").attr("");
+      $(".close_btn").click(function(){
+          $(".intro1").css({
+              display:"none"
+          });
+        });
+        $(".band_picture1").click(function(){
+            $(".intro1").css({
+                display:"flex"
+            });
+        });
 
+        $(".close_btn2").click(function(){
+              $(".intro2").css({
+                  display:"none"
+              });
+            });
+            $(".band_picture2").click(function(){
+                $(".intro2").css({
+                    display:"flex"
+                });
+            });
+
+        $(".close_btn3").click(function(){
+            $(".intro3").css({
+                display:"none"
+            });
+            });
+            $(".band_picture3").click(function(){
+                $(".intro3").css({
+                    display:"flex"
+                });
+            });
+      };
+  
   
 
      

@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-   
+    font-family: Roboto;
 }
 body{
     background-color: rgb(242,238,238,1);
@@ -734,7 +734,6 @@ button.btn{
       }
       footer{
         max-width: 100% !important;
-        /* max-width: 960px; */
         display: block;
         height: auto!important;
       }

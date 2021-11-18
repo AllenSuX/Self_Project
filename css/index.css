@@ -1,5 +1,7 @@
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body{
   margin: 0;
@@ -29,10 +31,6 @@ div.top_image{
   font-size: 16px;
   vertical-align: top;
 }
-/* div.top_image>img{
-width: 1039px;
-height: 100%;
-} */
 div.box>img{
   width: 1039px;
   height: 100%;
@@ -47,10 +45,7 @@ div.logo{
   font-size: 16px;
 }
 /* ====================Body content========================================== */
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 ul {
   list-style: none;
@@ -116,19 +111,3 @@ ul {
   top: 50%;
   margin-top: -30px;
 }
-
-/* .arrowtop-left,
-.arrowtop-right {
-  width: 30px;
-  height: 60px;
-  position: absolute;
-  font: 20px/60px "consolas";
-  color: #fff;
-  background-color: rgba(0, 0, 0, .3);
-  text-align: center;
-  cursor: pointer;
-} */
-
-/* .arrowtop-right {
-  right: 0;
-} */
