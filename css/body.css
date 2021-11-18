@@ -750,7 +750,13 @@ div.arrow > img{
     height: 30px;
   }
   div.intro1_text>p.pt1{
-    margin-top: 80px;
+    margin-top: 20px;
+  }
+  div.intro2_text>p.pt2{
+    margin-top: 20px;
+  }
+  div.intro3_text>p.pt3{
+    margin-top: 20px;
   }
   div.intro1_text>h1{
     width: 100px;
@@ -810,7 +816,7 @@ div.arrow > img{
     height: 30px;
   }
   div.intro1_text>p.pt2{
-    margin-top: 80px;
+    margin-top: 20px;
   }
   div.intro2_text>h1{
     width: 100px;
@@ -867,9 +873,6 @@ div.arrow > img{
   div.close_btn{
     width: 30px;
     height: 30px;
-  }
-  div.intro3_text>p.pt3{
-    margin-top: 80px;
   }
   div.intro3_text>h1{
     width: 200px;
