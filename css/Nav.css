@@ -285,4 +285,5 @@ span.newshow{
 div.topline{
   width: 1440px;
   margin: 0 auto;
+  max-width: 100%;
 }

@@ -1,5 +1,5 @@
 
-var y = window.matchMedia("(max-width: 1400px) and (min-width: 992px)")
+var y = window.matchMedia("(max-width: 2000px) and (min-width: 992px)")
 if(y.matches){
 var intro1 = document.getElementsByTagName("img")[10];
 var body1 = document.getElementsByClassName("body1")[0];

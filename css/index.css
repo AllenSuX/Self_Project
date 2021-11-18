@@ -55,6 +55,7 @@ ul {
   width: 960px;
   height: 628px;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .inner {

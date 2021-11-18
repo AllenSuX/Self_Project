@@ -8,6 +8,7 @@ body{
 }
 div.body1{
   width: 1400px;
+  max-width: 100%;
   height:555px;
   margin: 0 auto;
   position: relative;
@@ -110,6 +111,7 @@ div.close_btn{
 /* =================第二區塊=============== */
 div.body2{
   width: 1400px;
+  max-width: 100%;
   height:555px;
   margin: 0 auto;
   position: relative;
@@ -210,6 +212,7 @@ div.band_picture2:hover{
 /* =================第三區塊=============== */
 div.body3{
   width: 1400px;
+  max-width: 100%;
   height:660px;
   margin: 0 auto;
   position: relative;
@@ -281,6 +284,7 @@ span.news{
 }
 div.topline2{
   width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   height: 80px;
 }
@@ -352,6 +356,7 @@ div.band_picture3:hover{
 /* ===============最新活動=========== */
 div.news1{
   width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   padding-bottom: 30px;
 }
@@ -371,6 +376,7 @@ div.news1>p{
 div.news1>div{
   display: inline-block;
   width: 1000px;
+  max-width: 100%;
   margin-top:30px;
   margin-left:120px;
   background-color: rgb(196,196,196,38%);
@@ -456,6 +462,7 @@ a.more2{
 /* ===============最新公告=========== */
 div.news2{
   width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   padding-bottom: 30px;
 }
@@ -475,6 +482,7 @@ div.news2>p{
 div.news2>div{
   display: inline-block;
   width: 1000px;
+  max-width: 100%;
   margin-top:30px;
   margin-left:120px;
   background-color: rgb(196,196,196,38%);
@@ -542,6 +550,7 @@ a.more3{
 div.arrow{
   height:40px;
   width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: right;
   margin-top:91px;
@@ -1281,12 +1290,12 @@ div.intro3_text{
   
     div.body1>p{
       display: block;
-      width: 100%;
+      width: 50%;
       padding-left: 50px;
     }
     div.body1>time{
       display: block;
-      width: 100%;
+      width: 50%;
       padding-left: 50px;
     }
     div.band_picture1{
@@ -1333,12 +1342,12 @@ div.intro3_text{
   
     div.body2>p{
       display: block;
-      width: 100%;
+      width: 50%;
       padding-left: 50px;
     }
     div.body2>time{
       display: block;
-      width: 100%;
+      width: 50%;
       padding-left: 50px;
     }
     div.band_picture2{
@@ -1383,12 +1392,12 @@ div.intro3_text{
   
     div.body3>p{
       display: block;
-      width: 100%;
+      width: 50%;
       padding-left: 50px;
     }
     div.body3>time{
       display: block;
-      width: 100%;
+      width: 50%;
       padding-left: 50px;
     }
     div.band_picture3{
@@ -1455,7 +1464,7 @@ div.intro3_text{
       display: inline-block;
       position: absolute;
       right: 0px;
-      bottom: -10px;
+      bottom: 0px;
     }
     div.top_image > img{
       display: block!important;
@@ -1591,12 +1600,12 @@ div.intro3_text{
 
   div.body1>p{
     display: block;
-    width: 100%;
+    width: 50%;
     padding-left: 50px;
   }
   div.body1>time{
     display: block;
-    width: 100%;
+    width: 50%;
     padding-left: 50px;
   }
   div.band_picture1{
@@ -1638,12 +1647,12 @@ div.intro3_text{
 
   div.body2>p{
     display: block;
-    width: 100%;
+    width: 50%;
     padding-left: 50px;
   }
   div.body2>time{
     display: block;
-    width: 100%;
+    width: 50%;
     padding-left: 50px;
   }
   div.band_picture2{
@@ -1682,12 +1691,12 @@ div.intro3_text{
 
   div.body3>p{
     display: block;
-    width: 100%;
+    width: 50%;
     padding-left: 50px;
   }
   div.body3>time{
     display: block;
-    width: 100%;
+    width: 50%;
     padding-left: 50px;
   }
   div.band_picture3{
