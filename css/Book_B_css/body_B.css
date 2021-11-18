@@ -421,3 +421,7 @@ li div img{
     width: 100%;
     height: 100%;
 }
+.dateli:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}

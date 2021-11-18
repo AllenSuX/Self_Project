@@ -81,10 +81,11 @@ newUU ='<div><img src="./images/red.svg"><img src="./images/red.svg"><img src=".
         backgroundColor:'lightgray',
         borderRadius:'20px',
         position:'absolute',
-        width:'100px',
+        width:'120px',
         left:'50%',
         transform: 'translateX(-50%)'
     });
+	console.log("123");
     newstr+="<div><p class='tt1'>上</p><img src='./images/red.svg'><p class='tt1'>中</p><img src='./images/red.svg'><p class='tt1'>下</p><img src='./images/green.svg'></div>"
     $(this.children).html(newstr);
 });
